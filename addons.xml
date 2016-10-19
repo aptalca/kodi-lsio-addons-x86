@@ -2,11 +2,12 @@
 <addons>
 <addon id="docker.linuxserver.plex"
        name="Plex (linuxserver/plex:latest)"
-       version="1.0.4"
+       version="1.0.5"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
     <import addon="xbmc.python" version="2.1.0"/>
+
     <import addon="service.system.docker" version="0.0.0" />
   </requires>
   <extension point="xbmc.service" library="default.py">
@@ -18,6 +19,7 @@
 Plex organizes video, music and photos from personal media libraries and streams them to smart televsions, streaming boxes and mobile devices
     </description>
     <disclaimer>
+
     </disclaimer>
     <platform>all</platform>
   </extension>
