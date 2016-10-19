@@ -1,0 +1,17 @@
+#!/bin/sh
+
+name="$(basename $0)"
+. /etc/profile
+oe_setup_addon "$name"
+
+docker rm "$name" 2>/dev/null
+docker pull lsiodev/duckdns:latest
+[[ ! -z $(docker images | grep 'lsiodev/duckdns' | grep "none" | awk '{print$3}') ]] && docker rmi $(docker images | grep 'lsiodev/duckdns' | grep "none" | awk '{print$3}')
+docker run --name="$name" \
+           --net=host \
+           -e SUBDOMAINS="$E_SUBDOMAINS" \
+		   -e TOKEN="$E_TOKEN" \
+           -e PUID="$E_PUID" \
+           -e PGID="$E_PGID" \
+           -e TZ="$(date +%Z)" \
+           lsiodev/duckdns:latest
