@@ -1,5 +1,8 @@
 docker.linuxserver.plex:
 ------------------------
+1.0.7
+-Stop avahi in container, conflicts with LE's avahi daemon
+
 1.0.6
 -Fix housekeeping
 -Fix timezone

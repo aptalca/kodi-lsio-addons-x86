@@ -2,7 +2,7 @@
 <addons>
 <addon id="docker.linuxserver.plex"
        name="Plex (linuxserver/plex:latest)"
-       version="1.0.6"
+       version="1.0.7"
        provider-name="linuxserver.io">
   <requires>
     <import addon="os.libreelec.tv" version="7.0"/>
