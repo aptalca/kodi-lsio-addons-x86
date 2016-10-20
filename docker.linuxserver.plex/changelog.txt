@@ -1,5 +1,9 @@
 docker.linuxserver.plex:
 ------------------------
+1.0.6
+-Fix housekeeping
+-Fix timezone
+
 1.0.5
 -Fix file encoding
 
