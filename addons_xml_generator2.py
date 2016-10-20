@@ -169,7 +169,18 @@ if (__name__ == "__main__"):
                 print('Zipping %s and moving to %s\n' % (x, zipsfolder))
                 try:
                     zipfolder(zipfilenamefirstpart + version + zipfilenamelastpart, foldertozip, zipsfolder, x)
-                    print('zipped with zipfolder\n')
+                    print('zipped with zipfolder')
+                    try:
+                        import md5
+                        m = md5.new(open("%s" % (zipsfolder + x + version + '.zip'), "r").read()).hexdigest()
+                    except ImportError:
+                        import hashlib
+                        m = hashlib.md5(open("%s" % (zipsfolder + x + version + '.zip'), "r", encoding="UTF-8").read().encode("UTF-8")).hexdigest()
+                    try:
+                        open("%s" % (zipsfolder + x + version + '.zip.md5'), "wb").write(m.encode("UTF-8"))
+                        print("zip.md5 file created\n")
+                    except Exception as e:
+                        print("An error occurred creating zip.md5 file!\n%s" % e)
                 except:
                     if os.path.exists(zipsfolder + x + version + '.zip'):
                         os.remove(zipsfolder + x + version + '.zip')
