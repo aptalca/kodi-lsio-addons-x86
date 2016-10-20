@@ -51,7 +51,7 @@ Duckdns is a free dynamic DNS service hosted on Amazon VPC. Unlike most other fr
 <addon
   id="repository.linuxserver.x86"
   name="Linuxserver x86 Add-ons"
-  version="1.0.0"
+  version="1.0.1"
   provider-name="linuxserver">
   <requires>
     <import addon="xbmc.addon"
