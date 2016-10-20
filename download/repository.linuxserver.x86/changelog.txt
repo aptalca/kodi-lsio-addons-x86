@@ -1,5 +1,8 @@
 repository.linuxserver:
 ----------------------
+1.0.2
+-Update info and add hashes
+
 1.0.1
 -Add icon
 

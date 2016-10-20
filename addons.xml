@@ -53,7 +53,7 @@ Plex organizes video, music and photos from personal media libraries and streams
 <addon
   id="repository.linuxserver.x86"
   name="Linuxserver x86 Add-ons"
-  version="1.0.1"
+  version="1.0.2"
   provider-name="linuxserver">
   <requires>
     <import addon="xbmc.addon"
@@ -64,7 +64,6 @@ Plex organizes video, music and photos from personal media libraries and streams
     <info compressed="true">https://raw.githubusercontent.com/aptalca/kodi-lsio-addons-x86/master/addons.xml</info>
     <checksum>https://raw.githubusercontent.com/aptalca/kodi-lsio-addons-x86/master/addons.xml.md5</checksum>
     <datadir zip="true">https://raw.githubusercontent.com/aptalca/kodi-lsio-addons-x86/master/download</datadir>
-    <hashes>false</hashes>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>Install Add-ons from linuxserver's x86 repository</summary>
