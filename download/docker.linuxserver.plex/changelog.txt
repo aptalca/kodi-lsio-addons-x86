@@ -1,0 +1,26 @@
+docker.linuxserver.plex:
+------------------------
+1.0.7
+-Stop avahi in container, conflicts with LE's avahi daemon
+
+1.0.6
+-Fix housekeeping
+-Fix timezone
+
+1.0.5
+-Fix file encoding
+
+1.0.4
+-Fix addon folder name
+
+1.0.3
+-More typos
+
+1.0.2
+-Fixed typos
+
+1.0.1
+-Added housekeeping for docker images
+
+1.0.0
+- Initial addon

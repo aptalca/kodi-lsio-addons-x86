@@ -1,29 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="docker.linuxserver.plex"
-       name="Plex (linuxserver/plex:latest)"
-       version="1.0.7"
-       provider-name="linuxserver.io">
-  <requires>
-    <import addon="os.libreelec.tv" version="7.0"/>
-    <import addon="xbmc.python" version="2.1.0"/>
-
-    <import addon="service.system.docker" version="0.0.0" />
-  </requires>
-  <extension point="xbmc.service" library="default.py">
-    <provides></provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Plex Media Server as a Docker container</summary>
-    <description>
-Plex organizes video, music and photos from personal media libraries and streams them to smart televsions, streaming boxes and mobile devices
-    </description>
-    <disclaimer>
-
-    </disclaimer>
-    <platform>all</platform>
-  </extension>
-</addon>
 <addon id="docker.linuxserver.duckdns"
        name="DuckDNS (linuxserver/duckdns:latest)"
        version="1.0.1"
@@ -48,6 +24,32 @@ Duckdns is a free dynamic DNS service hosted on Amazon VPC. Unlike most other fr
     <platform>all</platform>
   </extension>
 </addon>
+
+<addon id="docker.linuxserver.plex"
+       name="Plex (linuxserver/plex:latest)"
+       version="1.0.7"
+       provider-name="linuxserver.io">
+  <requires>
+    <import addon="os.libreelec.tv" version="7.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+    <import addon="service.system.docker" version="0.0.0" />
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides></provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Plex Media Server as a Docker container</summary>
+    <description>
+Plex organizes video, music and photos from personal media libraries and streams them to smart televsions, streaming boxes and mobile devices
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon
   id="repository.linuxserver.x86"
   name="Linuxserver x86 Add-ons"

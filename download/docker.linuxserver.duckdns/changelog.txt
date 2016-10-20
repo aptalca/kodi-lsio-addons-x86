@@ -1,0 +1,8 @@
+docker.linuxserver.duckdns:
+------------------------
+1.0.1
+-Fix housekeeping script
+-Remove uid/gid settings (permanently set to root)
+
+1.0.0
+- Initial addon
