@@ -15,8 +15,8 @@
     <datadir zip="true">https://raw.githubusercontent.com/aptalca/kodi-lsio-addons-x86/master/download</datadir>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>Install Add-ons from linuxserver's x86 repository</summary>
-    <description>Download and install x86 add-ons from the unofficial linuxserver's addon repository.</description>
+    <summary>Install add-ons from linuxserver x86 repository</summary>
+    <description>Download and install x86 docker container add-ons from the unofficial linuxserver addon repository.</description>
     <disclaimer> </disclaimer>
     <platform>all</platform>
     <nofanart>true</nofanart>
