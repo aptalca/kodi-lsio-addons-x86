@@ -1,5 +1,8 @@
 docker.linuxserver.plex:
 ------------------------
+1.0.9
+-Fix typo in system.d service file
+
 1.0.8
 -Fix errors in stopping avahi
 
